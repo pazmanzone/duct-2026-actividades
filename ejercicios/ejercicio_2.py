@@ -31,12 +31,16 @@ def main():
     # Secuencia A: frecuencias de todas las palabras
     frecuencias_todas = {}
     for token in tokens:
+        # TODO: completar la linea que agrega "token" al diccionario
+        # "frecuencias_todas", sumando 1 cada vez que se repite
         frecuencias_todas[token] = frecuencias_todas.get(token, 0) + 1
 
     # Secuencia B: frecuencias sin palabras vacias (stopwords)
     frecuencias_sin_stopwords = {}
     for token in tokens:
         if token not in STOP_WORDS:
+            # TODO: completar la linea que agrega "token" al diccionario
+            # "frecuencias_sin_stopwords", sumando 1 cada vez que se repite
             frecuencias_sin_stopwords[token] = frecuencias_sin_stopwords.get(token, 0) + 1
 
     print("=== Secuencia A: todas las palabras ===")
