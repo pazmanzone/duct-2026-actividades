@@ -9,7 +9,7 @@ def contar_frecuencias(ruta):
     Retorna:
         dict: pares {palabra: frecuencia}
     """
-
+    
     with open ("la_biblioteca_de_babel.txt", "r", encoding="utf-8") as archivo:
         texto = archivo.read()
 
