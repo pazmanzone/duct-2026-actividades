@@ -12,7 +12,7 @@ def contar_frecuencias(ruta):
     
     with open ("la_biblioteca_de_babel.txt", "r", encoding="utf-8") as archivo:
         texto = archivo.read()
-
+        
     palabras = texto.lower().split()
 
     frecuencias = {}
