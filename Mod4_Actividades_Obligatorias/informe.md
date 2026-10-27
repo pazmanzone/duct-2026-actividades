@@ -59,3 +59,4 @@ El método `.get()` recibe dos parámetros: la clave (`token`) y un valor por de
 En ambos casos el bucle `for` no es infinito: termina cuando recorre todos los tokens del texto.
 
 **Conclusión.** En el Ejercicio 1 se asigna a `archivo` el resultado de abrir el archivo, y en el Ejercicio 2 se asigna a cada diccionario el resultado de `.get()`. Es el mismo patrón, guardar el resultado de una operación en una variable, aplicado primero a la lectura del archivo y después al conteo de palabras.
+
