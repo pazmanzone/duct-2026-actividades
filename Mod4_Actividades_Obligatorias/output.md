@@ -24,7 +24,7 @@ Las 10 palabras más frecuentes:
 
 ## Ejercicio 2
 
-Secuencia A: todas las palabras
+### Secuencia A: todas las palabras
 
 | Posición | Palabra | Frecuencia |
 |---|---|---|
@@ -39,7 +39,7 @@ Secuencia A: todas las palabras
 | 9 | un | 39 |
 | 10 | las | 33 |
 
-Secuencia B: sin palabras vacías
+### Secuencia B: sin palabras vacías
 
 | Posición | Palabra | Frecuencia |
 |---|---|---|
