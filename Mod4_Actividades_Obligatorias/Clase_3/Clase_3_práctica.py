@@ -63,3 +63,11 @@ df = pd.DataFrame({
 sns.boxplot(data=df, x="idioma", y="nivel")
 plt.title("Distribucion de niveles por idioma")
 plt.show()
+
+
+import spacy
+nlp = spacy.load("es_core_news_sm")
+doc = nlp("El analisis de corpus permite estudiar el uso real del lenguaje.")
+print(doc)
+for token in doc:
+    print(f"{token.text:15} {token.pos_:8} {token.dep_:15}")
