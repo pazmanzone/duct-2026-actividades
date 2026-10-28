@@ -51,3 +51,15 @@ plt.title("Frecuencia de palabras")
 plt.xlabel("Palabra")
 plt.ylabel("Frecuencia")
 plt.show()
+
+
+import seaborn as sns
+import pandas as pd
+df = pd.DataFrame({
+    "idioma": ["es", "en", "pt", "fr", "es", "en", "pt"],
+    "nivel": [8, 6, 7, 5, 9, 7, 8]
+
+})
+sns.boxplot(data=df, x="idioma", y="nivel")
+plt.title("Distribucion de niveles por idioma")
+plt.show()
