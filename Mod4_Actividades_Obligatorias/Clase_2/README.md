@@ -7,6 +7,6 @@ Autora: María Paz Manzone Rodriguez
 
 Archivo txt usado para la práctica: [La Biblioteca de Babel](https://github.com/pazmanzone/duct-2026-actividades/blob/main/Mod4_Actividades_Obligatorias/Clase_2/la_biblioteca_de_babel.txt)
 
-Informe de la actividad: [Informe](https://github.com/pazmanzone/duct-2026-actividades/blob/main/Mod4_Actividades_Obligatorias/Clase_2/informe.md)
+[Informe](https://github.com/pazmanzone/duct-2026-actividades/blob/main/Mod4_Actividades_Obligatorias/Clase_2/informe.md) de la actividad
 
-Output de ambos ejercicios: [Output](https://github.com/pazmanzone/duct-2026-actividades/blob/main/Mod4_Actividades_Obligatorias/Clase_2/output.md)
+[Output](https://github.com/pazmanzone/duct-2026-actividades/blob/main/Mod4_Actividades_Obligatorias/Clase_2/output.md) de ambos ejercicios: 
