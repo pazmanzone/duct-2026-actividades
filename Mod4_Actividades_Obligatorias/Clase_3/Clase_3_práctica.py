@@ -41,3 +41,13 @@ print(df.columns)
 print(df.dtypes)
 print(df.describe())
 print(df.info())
+
+
+import matplotlib.pyplot as plt
+palabras = ["sol", "luna", "mar", "cielo", "estrella"]
+frecuencias = [45, 32, 60, 28, 15]
+plt.bar(palabras, frecuencias)
+plt.title("Frecuencia de palabras")
+plt.xlabel("Palabra")
+plt.ylabel("Frecuencia")
+plt.show()
