@@ -17,6 +17,8 @@ print (np.sum(a))
 print (np.max(a))
 print (np.min(a))
 print (np.std(a))
+
+
 import pandas as pd
 datos = {
     "nombre": ["Maria", "Juan", "Ana"],
@@ -25,3 +27,17 @@ datos = {
 }
 df = pd.DataFrame(datos)
 print(df)
+
+
+df = pd.read_csv("corpus.csv")
+print(df.head())     # muestra las primeras 5 filas
+df.shape             # (3, 3)   filas x columnas
+df.columns           # nombre de las columnas
+df.dtypes            # tipo de dato de cada columna
+df.describe()        # estadisticas resumidas de las columnas numericas
+df.info()            # resumen general: tipos, nulos, memoria
+print(df.shape)      
+print(df.columns)
+print(df.dtypes)
+print(df.describe())
+print(df.info())
