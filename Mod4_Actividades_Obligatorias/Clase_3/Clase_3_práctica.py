@@ -71,3 +71,6 @@ doc = nlp("El analisis de corpus permite estudiar el uso real del lenguaje.")
 print(doc)
 for token in doc:
     print(f"{token.text:15} {token.pos_:8} {token.dep_:15}")
+
+for token in doc:
+    print(f"{token.text:15} {token.lemma_:15}")
