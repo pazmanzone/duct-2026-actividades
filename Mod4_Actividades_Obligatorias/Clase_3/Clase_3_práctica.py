@@ -17,3 +17,11 @@ print (np.sum(a))
 print (np.max(a))
 print (np.min(a))
 print (np.std(a))
+import pandas as pd
+datos = {
+    "nombre": ["Maria", "Juan", "Ana"],
+    "idioma": ["espanol", "ingles", "portugues"],
+    "nivel": [8, 6, 7]
+}
+df = pd.DataFrame(datos)
+print(df)
