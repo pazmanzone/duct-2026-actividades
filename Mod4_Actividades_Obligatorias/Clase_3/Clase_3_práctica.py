@@ -74,3 +74,7 @@ for token in doc:
 
 for token in doc:
     print(f"{token.text:15} {token.lemma_:15}")
+
+    doc = nlp("Gabriel Garcia Marquez escribio en Bogota y Ciudad de Mexico.")
+for ent in doc.ents:
+    print(f"{ent.text:25} {ent.label_:10}")
