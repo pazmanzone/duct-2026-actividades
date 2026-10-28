@@ -1,12 +1,12 @@
 # Python - Módulo IV, Clase 2, Actividad Obligatoria
 Autora: María Paz Manzone Rodriguez
 
-- Ejercicio 1: Abrir un archivo txt en Python
+- [Ejercicio 1](https://github.com/pazmanzone/duct-2026-actividades/blob/main/Mod4_Actividades_Obligatorias/Clase_2/ejercicio_1.py): Abrir un archivo txt en Python
 
-- Ejercicio 2: Contador de frecuencias en Python
+- [Ejercicio 2](https://github.com/pazmanzone/duct-2026-actividades/blob/main/Mod4_Actividades_Obligatorias/Clase_2/ejercicio_2.py): Contador de frecuencias en Python
 
-Archivo txt usado para la práctica: [La Biblioteca de Babel](Mod4_Actividades_Obligatorias/Clase_2/la_biblioteca_de_babel.txt)
+Archivo txt usado para la práctica: [La Biblioteca de Babel]([Mod4_Actividades_Obligatorias/Clase_2/la_biblioteca_de_babel.txt](https://github.com/pazmanzone/duct-2026-actividades/blob/main/Mod4_Actividades_Obligatorias/Clase_2/la_biblioteca_de_babel.txt))
 
-Informe de la actividad: [Informe](Mod4_Actividades_Obligatorias/Clase_2/informe.md)
+Informe de la actividad: [Informe]([Mod4_Actividades_Obligatorias/Clase_2/informe.md](https://github.com/pazmanzone/duct-2026-actividades/blob/main/Mod4_Actividades_Obligatorias/Clase_2/informe.md))
 
-Output de ambos ejercicios: [Output](Mod4_Actividades_Obligatorias/Clase_2/output.md)
+Output de ambos ejercicios: [Output]([Mod4_Actividades_Obligatorias/Clase_2/output.md](https://github.com/pazmanzone/duct-2026-actividades/blob/main/Mod4_Actividades_Obligatorias/Clase_2/output.md))
