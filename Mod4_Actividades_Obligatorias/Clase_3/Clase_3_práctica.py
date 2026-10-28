@@ -78,3 +78,35 @@ for token in doc:
     doc = nlp("Gabriel Garcia Marquez escribio en Bogota y Ciudad de Mexico.")
 for ent in doc.ents:
     print(f"{ent.text:25} {ent.label_:10}")
+
+
+from nltk.tokenize import word_tokenize
+texto = "El analisis de corpus es fundamental en linguistica computacional."
+tokens = word_tokenize(texto)
+print(tokens)
+
+from nltk.corpus import stopwords
+stop_es = set(stopwords.words('spanish'))
+
+palabras = ["el", "analisis", "de", "corpus", "es", "fundamental"]
+filtradas = [p for p in palabras if p not in stop_es]
+print(filtradas)
+
+from nltk.stem import SnowballStemmer
+stemmer = SnowballStemmer("spanish")
+print(stemmer.stem("corriendo"))    # corr (no siempre da resultados semanticamente correctos)
+
+print(stemmer.stem("correr"))       # correr
+
+from sklearn.feature_extraction.text import TfidfVectorizer
+vectorizer = TfidfVectorizer()
+X = vectorizer.fit_transform(["hola mundo", "hola Python"])
+print(X)
+
+from transformers import pipeline
+
+classifier = pipeline(
+    "sentiment-analysis",
+    model="nlptown/bert-base-multilingual-uncased-sentiment"
+)
+print(classifier("El producto es excelente, llegó rápido"))
