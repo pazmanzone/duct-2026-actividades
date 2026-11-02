@@ -52,15 +52,6 @@ plt.xlabel("Palabra")
 plt.ylabel("Frecuencia")
 plt.show()
 
-import matplotlib.pyplot as plt
-longitudes = [5, 8, 3, 12, 7, 9, 4, 11, 6, 8, 3, 15, 7, 10, 4]
-plt.hist(longitudes, bins=8, edgecolor="black")
-plt.title("Distribucion de longitudes de palabras")
-plt.xlabel("Cantidad de letras")
-plt.ylabel("Frecuencia")
-plt.show()
-
-
 import seaborn as sns
 import pandas as pd
 df = pd.DataFrame({
@@ -118,3 +109,4 @@ classifier = pipeline(
     model="nlptown/bert-base-multilingual-uncased-sentiment"
 )
 print(classifier("El producto es excelente, llegó rápido"))
+
