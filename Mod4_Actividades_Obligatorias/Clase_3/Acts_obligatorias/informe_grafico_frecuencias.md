@@ -15,11 +15,11 @@ Al quitar `[::-1]`, el orden de las barras se invierte respecto del gráfico ori
 
 Como se observa a continuación, sin `[::-1]` la palabra más frecuente queda en la base del gráfico:
 
-![Gráfico sin invertir las listas](grafico_sin_inversion.png)
+![Gráfico sin invertir las listas](graficos/grafico_sin_inversion.png)
 
 Con `[::-1]`, en cambio, la palabra más frecuente queda en la parte superior:
 
-![Gráfico con las listas invertidas](grafico_con_inversion.png)
+![Gráfico con las listas invertidas](graficos/grafico_con_inversion.png)
 
 ## 2. ¿Qué pasaría con el gráfico si cambiás top_n=10 por top_n=20? ¿Seguiría siendo legible?
 
@@ -29,18 +29,16 @@ Desde el punto de vista del contenido, ampliar a 20 palabras aporta menos inform
 
 Como se observa a continuación, con `top_n=20` el gráfico incluye más barras:
 
-![Gráfico con top_n=20](grafico_top20.png)
+![Gráfico con top_n=20](graficos/grafico_top20.png)
 
 ## 3. ¿Por qué usar plt.barh() (barras horizontales) en vez de plt.bar() (barras verticales) para este caso?
 
-Las categorías representadas son palabras, es decir, etiquetas de texto de longitud variable. En un gráfico de barras verticales (`plt.bar()`), las etiquetas se ubican bajo cada barra, sobre el eje horizontal, donde compiten por un espacio limitado. Con diez o más palabras, y especialmente si alguna es extensa, las etiquetas tienden a superponerse y es necesario rotarlas, lo que reduce su legibilidad.
+Las categorías representadas son palabras, es decir, etiquetas de texto de longitud variable. En un gráfico de barras verticales (`plt.bar()`), las etiquetas se ubican bajo cada barra, sobre el eje horizontal, donde compiten por un espacio limitado. Con diez o más palabras, y especialmente si alguna es extensa, las etiquetas tienden a superponerse y es necesario rotarlas, lo que reduce su legibilidad:
+
+![Gráfico con barras verticales](graficos/grafico_barras_verticales.png)
 
 En un gráfico de barras horizontales (`plt.barh()`), cada etiqueta se ubica a la izquierda de su barra, sobre el eje vertical, con espacio suficiente y en orientación horizontal. Además, esta disposición reproduce la lectura natural de un ranking, de arriba hacia abajo, y permite comparar las frecuencias a partir de la longitud de las barras. Por estas razones, `plt.barh()` resulta más adecuado para representar rankings de palabras, mientras que `plt.bar()` es preferible cuando las categorías son pocas o breves, o cuando el eje horizontal representa una variable ordenada, como el tiempo.
 
-Como se observa a continuación, con barras verticales (`plt.bar()`) las etiquetas se ubican bajo cada barra:
+Con barras horizontales (`plt.barh()`) cada etiqueta cuenta con espacio a la izquierda de su barra:
 
-![Gráfico con barras verticales](grafico_barras_verticales.png)
-
-En cambio, con barras horizontales (`plt.barh()`) cada etiqueta cuenta con espacio a la izquierda de su barra:
-
-![Gráfico con barras horizontales](grafico_con_inversion.png)
+![Gráfico con barras horizontales](graficos/grafico_con_inversion.png)
