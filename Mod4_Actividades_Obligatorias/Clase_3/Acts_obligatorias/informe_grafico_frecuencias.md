@@ -37,8 +37,11 @@ Las categorías representadas son palabras, es decir, etiquetas de texto de long
 
 ![Gráfico con barras verticales](graficos/grafico_barras_verticales.png)
 
-En un gráfico de barras horizontales (`plt.barh()`), cada etiqueta se ubica a la izquierda de su barra, sobre el eje vertical, con espacio suficiente y en orientación horizontal. Además, esta disposición reproduce la lectura natural de un ranking, de arriba hacia abajo, y permite comparar las frecuencias a partir de la longitud de las barras. Por estas razones, `plt.barh()` resulta más adecuado para representar rankings de palabras, mientras que `plt.bar()` es preferible cuando las categorías son pocas o breves, o cuando el eje horizontal representa una variable ordenada, como el tiempo.
-
-Con barras horizontales (`plt.barh()`) cada etiqueta cuenta con espacio a la izquierda de su barra:
+En un gráfico de barras horizontales (`plt.barh()`), cada etiqueta se ubica a la izquierda de su barra, sobre el eje vertical, con espacio suficiente y en orientación horizontal.
 
 ![Gráfico con barras horizontales](graficos/grafico_con_inversion.png)
+
+Además, esta disposición reproduce la lectura natural de un ranking, de arriba hacia abajo, y permite comparar las frecuencias a partir de la longitud de las barras. Por estas razones, `plt.barh()` resulta más adecuado para representar rankings de palabras, mientras que `plt.bar()` es preferible cuando las categorías son pocas o breves, o cuando el eje horizontal representa una variable ordenada, como el tiempo.
+
+
+
