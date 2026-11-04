@@ -9,3 +9,5 @@ def contar_palabras(texto):
         frecuencias[palabra] = frecuencias.get(palabra, 0) + 1
     print(f"DEBUG: resultado final = {frecuencias}")
     return frecuencias
+resultado = contar_palabras("Hola mundo hola")
+print(resultado)
