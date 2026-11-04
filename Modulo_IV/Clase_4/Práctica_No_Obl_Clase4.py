@@ -22,3 +22,16 @@ def analizar_texto(texto):
     print(f"DEBUG: POS tags = {[token.pos_ for token in doc]}")
     return doc
 doc = analizar_texto("Los gatos duermen en la casa.")
+
+import spacy
+nlp = spacy.load("es_core_news_sm")
+def procesar_corpus(textos):
+    resultados = []
+    for texto in textos:
+        doc = nlp(texto)
+        entidades = [(ent.text, ent.label_) for ent in doc.ents]
+        resultados.append(entidades)
+    return resultados
+textos = ["Juan vive en Buenos Aires", "Maria trabaja en Google"]
+resultados = procesar_corpus(textos)
+print(resultados)
