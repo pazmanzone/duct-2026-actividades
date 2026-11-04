@@ -11,3 +11,14 @@ def contar_palabras(texto):
     return frecuencias
 resultado = contar_palabras("Hola mundo hola")
 print(resultado)
+
+import spacy
+nlp = spacy.load("es_core_news_sm")
+def analizar_texto(texto):
+    doc = nlp(texto)
+    print(f"DEBUG: texto original = '{texto}'")
+    print(f"DEBUG: tokens = {[token.text for token in doc]}")
+    print(f"DEBUG: lemas = {[token.lemma_ for token in doc]}")
+    print(f"DEBUG: POS tags = {[token.pos_ for token in doc]}")
+    return doc
+doc = analizar_texto("Los gatos duermen en la casa.")
