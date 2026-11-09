@@ -13,6 +13,6 @@ def test_frecuencias_mayusculas():
     # gracias al .lower() de la funcion. El resultado deberia tener
     # "sol": 3
     assert resultado["sol"] == 3
-def test_frecuencias_espacios():
+def test_frecuencias_puntuacion():
     resultado = contar_frecuencias("sol)  sol,")
     assert resultado["sol"] == 2
