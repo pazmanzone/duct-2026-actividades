@@ -6,9 +6,9 @@ Si se elimina el método `.lower()` de la función `contar_frecuencias()`, las p
 
 En consecuencia, el test `test_frecuencias_mayusculas` falla, dado que espera que las tres variantes se contabilicen como una única palabra con una frecuencia de 3. Como se observa en las imágenes, pytest muestra un error de aserción (`AssertionError`), ya que la condición establecida en la prueba no se cumple:
 
-![Resultado FAILED del test test_frecuencias_mayusculas](pytest_mayusculas_failed.png)
+![Resultado FAILED del test test_frecuencias_mayusculas](capturas_pytest/pytest_mayusculas_failed.png)
 
-![AssertionError del test test_frecuencias_mayusculas](pytest_mayusculas_assertionerror.png)
+![AssertionError del test test_frecuencias_mayusculas](capturas_pytest/pytest_mayusculas_assertionerror.png)
 
 ## 2. ¿Por qué contar_frecuencias recibe un string directamente en vez de una ruta de archivo, como en la Clase 2? ¿Qué ventaja tiene eso a la hora de escribir pruebas?
 
@@ -20,9 +20,9 @@ Esta característica presenta una ventaja a la hora de escribir pruebas, ya que 
 
 Se identificaron dos posibles casos de borde para evaluar el comportamiento de la función. El primero consiste en introducir palabras acompañadas de signos de puntuación, por ejemplo, `"sol) sol,"`. En este caso, como se puede notar en las imágenes, la prueba falla porque la implementación actual no elimina los signos de puntuación, por lo que interpreta `"sol)"` y `"sol,"` como palabras diferentes de `"sol"`.
 
-![Resultado FAILED del test con signos de puntuación](pytest_puntuacion_failed.png)
+![Resultado FAILED del test con signos de puntuación](capturas_pytest/pytest_puntuacion_failed.png)
 
-![KeyError del test con signos de puntuación](pytest_puntuacion_keyerror.png)
+![KeyError del test con signos de puntuación](capturas_pytest/pytest_puntuacion_keyerror.png)
 
 El segundo caso consiste en utilizar espacios en blanco adicionales entre las palabras, por ejemplo, `"sol   sol sol"`. En esta situación, la prueba se ejecuta correctamente, ya que el método `.split()` permite separar las palabras e ignora los espacios adicionales.
 
