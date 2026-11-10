@@ -6,7 +6,7 @@ Autora: María Paz Manzone Rodriguez
 * Pruebas del código: [test_analizador.py](test_analizador.py)
 * Capturas de la ejecución de pytest:
     * [Test de mayúsculas: FAILED](capturas_pytest/pytest_mayusculas_failed.png)
-    * [Test de mayúsculas: AssertionError](capturas_pytest/pytest_mayusculas_assertionerror.png)
+    * [Test de mayúsculas: AssertionError](capturas_pytest/pytest_assertion_error.png)
     * [Test de signos de puntuación: FAILED](capturas_pytest/pytest_puntuacion_failed.png)
     * [Test de signos de puntuación: KeyError](capturas_pytest/pytest_puntuacion_keyerror.png)
 * [Informe](informe_pytest.md) de la actividad
