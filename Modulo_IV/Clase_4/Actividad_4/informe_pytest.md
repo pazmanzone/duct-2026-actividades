@@ -8,7 +8,7 @@ En consecuencia, el test `test_frecuencias_mayusculas` falla, dado que espera qu
 
 ![Resultado FAILED del test test_frecuencias_mayusculas](capturas_pytest/pytest_mayusculas_failed.png)
 
-![AssertionError del test test_frecuencias_mayusculas](capturas_pytest/Capturadepantalla2026-11-09 171713.png)
+![AssertionError del test test_frecuencias_mayusculas](capturas_pytest/pytest_assertion_error.png)
 
 ## 2. ¿Por qué contar_frecuencias recibe un string directamente en vez de una ruta de archivo, como en la Clase 2? ¿Qué ventaja tiene eso a la hora de escribir pruebas?
 
