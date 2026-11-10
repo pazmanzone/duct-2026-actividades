@@ -56,7 +56,7 @@ def analizar_y_visualizar(ruta, top_n=10):
 
     frecuencias_sin_stopwords = {}
 
-    
+
     for palabra in palabras_texto:
         if palabra not in STOP_WORDS:
             frecuencias_sin_stopwords[palabra] = frecuencias_sin_stopwords.get(palabra, 0) + 1
@@ -72,7 +72,7 @@ def analizar_y_visualizar(ruta, top_n=10):
 
     plt.figure(figsize=(10, 6))
     plt.barh(palabras[::-1], valores[::-1], color='skyblue')
-    plt.title(f"Top {top_n} palabras mas frecuentes")
+    plt.title(f"Top {top_n} palabras de contenido mas frecuentes")
     plt.xlabel("Frecuencia")
     plt.ylabel("Palabras")
 
