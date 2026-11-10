@@ -5,7 +5,7 @@ Autora: María Paz Manzone Rodriguez
 
 - [Ejercicio 2](https://github.com/pazmanzone/duct-2026-actividades/blob/main/Mod4_Actividades_Obligatorias/Clase_2/ejercicio_2.py): Contador de frecuencias en Python
 
-Archivo txt usado para la práctica: [La Biblioteca de Babel](https://github.com/pazmanzone/duct-2026-actividades/blob/main/Mod4_Actividades_Obligatorias/Clase_2/la_biblioteca_de_babel.txt](https://github.com/pazmanzone/duct-2026-actividades/blob/main/Modulo_IV/Clase_2/texto.txt)
+Archivo txt usado para la práctica: [La Biblioteca de Babel](https://github.com/pazmanzone/duct-2026-actividades/blob/main/Mod4_Actividades_Obligatorias/Clase_2/la_biblioteca_de_babel.txt](https://github.com/pazmanzone/duct-2026-actividades/blob/main/Modulo_IV/Clase_2/texto.txt )
 
 [Informe](https://github.com/pazmanzone/duct-2026-actividades/blob/main/Mod4_Actividades_Obligatorias/Clase_2/informe.md) de la actividad
 
