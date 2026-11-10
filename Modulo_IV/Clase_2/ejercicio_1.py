@@ -12,7 +12,7 @@ def contar_frecuencias(ruta):
     # TODO: completar la sentencia para abrir el archivo "ruta" en modo
     # lectura ("r"), usando codificacion utf-8, y asignarlo a la
     # variable "archivo"
-    with open ("la_biblioteca_de_babel.txt", "r", encoding="utf-8") as archivo:
+    with open (ruta, "r", encoding="utf-8") as archivo:
         texto = archivo.read()
         
     palabras = texto.lower().split()
