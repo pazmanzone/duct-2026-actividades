@@ -27,6 +27,28 @@ Retorna:
     return texto.split()
 
 
+def contar_frecuencias(texto):
+    """
+    Cuenta la frecuencia de cada palabra del texto,
+    excluyendo las stopwords.
+
+    Parámetros:
+        texto (str): texto que se desea analizar.
+
+    Retorna:
+        dict: diccionario con cada palabra y su frecuencia.
+    """
+    palabras_texto = tokenizar(texto)
+
+    frecuencias = {}
+
+    for palabra in palabras_texto:
+        if palabra not in STOP_WORDS:
+            frecuencias[palabra] = frecuencias.get(palabra, 0) + 1
+
+    return frecuencias
+
+
 
 def analizar_y_visualizar(ruta, top_n=10):
     """
@@ -49,17 +71,9 @@ def analizar_y_visualizar(ruta, top_n=10):
         print("No se pudo acceder al archivo. Verifique que la ruta sea correcta y que tenga permisos de lectura.")
         return 
 
-    # 2. Tokenizar el texto y contar la frecuencia de cada palabra
-
-    palabras_texto = tokenizar(texto)
-
-
-    frecuencias_sin_stopwords = {}
-
-
-    for palabra in palabras_texto:
-        if palabra not in STOP_WORDS:
-            frecuencias_sin_stopwords[palabra] = frecuencias_sin_stopwords.get(palabra, 0) + 1
+    # 2. Contar la frecuencia de cada palabra
+    
+    frecuencias_sin_stopwords = contar_frecuencias(texto)
 
     # 3. Obtener las top_n palabras mas frecuentes
 
