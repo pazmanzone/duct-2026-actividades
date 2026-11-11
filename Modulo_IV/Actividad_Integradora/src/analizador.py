@@ -1,5 +1,11 @@
 import string
+from pathlib import Path
+
 import matplotlib.pyplot as plt
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+RUTA_TEXTO = BASE_DIR / "data" / "texto_integradora.txt"
+RUTA_GRAFICO = BASE_DIR / "outputs" / "grafico_frecuencias.png"
 
 
 STOP_WORDS = {
@@ -50,7 +56,7 @@ def contar_frecuencias(texto):
 
 
 
-def analizar_y_visualizar(ruta, top_n=10):
+def analizar_y_visualizar(ruta=RUTA_TEXTO, top_n=10):
     """
     Lee un archivo de texto, cuenta la frecuencia de cada palabra
     y genera un grafico de barras horizontales con las top_n
@@ -92,11 +98,6 @@ def analizar_y_visualizar(ruta, top_n=10):
 
     # 5. Guardar el grafico como imagen y mostrarlo
 
-    plt.savefig("grafico_frecuencias.png", dpi=150, bbox_inches="tight")
+    RUTA_GRAFICO.parent.mkdir(exist_ok=True)
+    plt.savefig(RUTA_GRAFICO)
     plt.show()
-
-def main():
-    analizar_y_visualizar("texto_integradora.txt")
-
-if __name__ == "__main__":
-    main()
